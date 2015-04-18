@@ -6,8 +6,7 @@
     "Koushik Kothagal <koush.s@gmail.com>"
   ],
   "main": [
-    "src/components/hamlet/abtest.directive.js",
-    "src/components/hamlet/hash.service.js"
+    "dist/hamlet.js"
   ],
   "keywords": [
     "ab-testing",

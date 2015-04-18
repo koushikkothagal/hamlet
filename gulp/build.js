@@ -84,4 +84,10 @@ module.exports = function(options) {
   });
 
   gulp.task('build', ['html', 'fonts', 'other']);
+
+  gulp.task('compress', function() {
+  return gulp.src('src/components/hamlet/*.js')
+    .pipe($.uglifyjs('hamlet.js'))
+    .pipe(gulp.dest('dist'));
+});
 };
