@@ -10,10 +10,10 @@ angular.module('hamlet')
     	abTestConfig: '@',
     	abTestQualifier: '@'
     },
-    link: function(scope, element, attrs, tabsCtrl) {
+    link: function(scope, element, attrs, abTestCtrl) {
       attrs.$observe('abTestQualifier', function (){
-        var selectedBucket = HashService.calculateBucket(attrs.abTestQualifier, tabsCtrl.getRatios());
-        tabsCtrl.selectBranch(selectedBucket);
+        var selectedBucket = HashService.calculateBucket(attrs.abTestQualifier, abTestCtrl.getRatios());
+        abTestCtrl.selectBranch(selectedBucket);
       });
     },
     controller: function($scope) {
@@ -82,17 +82,10 @@ angular.module('hamlet')
       title: '@',
       ratio: '@'
     },
-    link: function(scope, element, attrs, tabsCtrl) {
-      tabsCtrl.addPane(scope);
-      tabsCtrl.addRatio(scope.ratio);
-      /* var srt = "a";
-      for (var i = 0; i < 10; i++) {
-        srt = srt + 'a';
-        console.log(srt + ' ' + new String(srt).hashCode());
-      }
-      */
-
+    link: function(scope, element, attrs, abTestCtrl) {
+      abTestCtrl.addPane(scope);
+      abTestCtrl.addRatio(scope.ratio);
     },
-    template: '<div class="tab-pane" ng-show="selected" ng-transclude></div>'
+    template: '<div ng-show="selected" ng-transclude></div>'
   };
 });

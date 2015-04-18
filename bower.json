@@ -1,6 +1,6 @@
 {
   "name": "hamlet",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A/B testing framework for AngularJS applications",
   "authors": [
     "Koushik Kothagal <koush.s@gmail.com>"

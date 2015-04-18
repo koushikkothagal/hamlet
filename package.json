@@ -1,9 +1,10 @@
 {
   "name": "hamlet",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "dependencies": {},
   "scripts": {
-    "test": "gulp test"
+    "test": "gulp test",
+    "build": "gulp build"
   },
   "devDependencies": {
     "gulp": "~3.8.10",
