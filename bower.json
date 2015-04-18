@@ -1,0 +1,26 @@
+{
+  "name": "hamlet",
+  "version": "0.0.1",
+  "description": "A/B testing framework for AngularJS applications",
+  "authors": [
+    "Koushik Kothagal <koush.s@gmail.com>"
+  ],
+  "main": [
+    "src/components/hamlet/abtest.directive.js",
+    "src/components/hamlet/hash.service.js"
+  ],
+  "keywords": [
+    "ab-testing",
+    "angularjs"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "angular": "~1.2.27"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.2.27"
+  },
+  "resolutions": {
+    "angular": "~1.2.27"
+  }
+}
