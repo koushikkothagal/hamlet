@@ -9,13 +9,7 @@
     "dist/hamlet.js"
   ],
   "ignore": [
-    "index.html",
-    "src",
-    "bower_components",
-    "node_modules",
-    "e2e",
-    "gulp",
-    "README.md"
+    "index.html"
   ],
   "keywords": [
     "ab-testing",
