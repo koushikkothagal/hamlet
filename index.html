@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640">
+
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <title>Hamlet by koushikkothagal</title>
+  </head>
+
+  <body>
+    <a id="forkme_banner" href="https://github.com/koushikkothagal/hamlet">View on GitHub</a>
+    <div class="shell">
+
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>Hamlet</h1>
+            <h2>An AngularJS A/B testing framework</h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
+
+      <section id="downloads">
+        <span class="inner">
+          <a href="https://github.com/koushikkothagal/hamlet/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/koushikkothagal/hamlet/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+        </span>
+      </section>
+
+
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
+        <h3>
+<a id="to-b-or-to-a-thats-the-question" class="anchor" href="#to-b-or-to-a-thats-the-question" aria-hidden="true"><span class="octicon octicon-link"></span></a><em>To B, or to A? That's the question</em>
+</h3>
+
+<p>Hamlet is an AngularJS A/B testing framework. Plug in Hamlet to your AngularJS application to test multiple variants of content on any page.</p>
+
+<h3>
+<a id="features" class="anchor" href="#features" aria-hidden="true"><span class="octicon octicon-link"></span></a>Features</h3>
+
+<p>Hamlet supports the following features:</p>
+
+<ol>
+<li>Supports testing multiple variations. Hamlet is not just an A/B testing framework. It's an A/B/C/D/... testing framework!</li>
+<li>Show different portions of content to different audiences <em>on the same page</em>. Supports DOM element level variations.</li>
+<li>Control ratio of how much of the audience needs to see each variation. </li>
+<li>Stickiness. Let Hamlet know an ID / session value that identifies a unique user, and Hamlet ensures stickiness. Once a user sees a version, they'll always see the same version, even in multiple browsers.</li>
+</ol>
+
+<h3>
+<a id="how-to-use" class="anchor" href="#how-to-use" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to use</h3>
+
+<ol>
+<li>Identify a value (some sort of user ID) that uniquely identifies your users.</li>
+<li>Create multiple branches (up to 10 branches) by adding a <code>&lt;div&gt;</code> for each branch, and add code your variants.</li>
+<li>Configure ratios (0 - 1) for each branch to control how many of your users see each branch.</li>
+</ol>
+
+<p>And Hamlet does the rest</p>
+
+<div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">ab-test</span> <span class="pl-e">ab-test-qualifier</span>=<span class="pl-s"><span class="pl-pds">"</span>{{userId}}<span class="pl-pds">"</span></span>&gt;
+  &lt;<span class="pl-ent">div</span> <span class="pl-e">test-branch</span> <span class="pl-e">ratio</span>=<span class="pl-s"><span class="pl-pds">"</span>0.1<span class="pl-pds">"</span></span>&gt;
+    &lt;<span class="pl-ent">h4</span>&gt;Branch 1&lt;/<span class="pl-ent">h4</span>&gt;
+  &lt;/<span class="pl-ent">div</span>&gt;
+  &lt;<span class="pl-ent">div</span> <span class="pl-e">test-branch</span> <span class="pl-e">ratio</span>=<span class="pl-s"><span class="pl-pds">"</span>0.6<span class="pl-pds">"</span></span>&gt;
+    &lt;<span class="pl-ent">h4</span>&gt;Branch 2&lt;/<span class="pl-ent">h4</span>&gt;
+  &lt;/<span class="pl-ent">div</span>&gt;
+  &lt;<span class="pl-ent">div</span> <span class="pl-e">test-branch</span> <span class="pl-e">ratio</span>=<span class="pl-s"><span class="pl-pds">"</span>0.3<span class="pl-pds">"</span></span>&gt;
+    &lt;<span class="pl-ent">h4</span>&gt;Branch 3&lt;/<span class="pl-ent">h4</span>&gt;
+  &lt;/<span class="pl-ent">div</span>&gt;
+&lt;/<span class="pl-ent">div</span>&gt;</pre></div>
+
+<h3>
+<a id="get-hamlet" class="anchor" href="#get-hamlet" aria-hidden="true"><span class="octicon octicon-link"></span></a>Get Hamlet</h3>
+
+<h4>
+<a id="bower" class="anchor" href="#bower" aria-hidden="true"><span class="octicon octicon-link"></span></a>Bower</h4>
+
+<pre><code>bower install hamlet
+</code></pre>
+
+<h3>
+<a id="js--source" class="anchor" href="#js--source" aria-hidden="true"><span class="octicon octicon-link"></span></a>JS / Source</h3>
+
+<pre><code>https://github.com/koushikkothagal/hamlet
+</code></pre>
+
+<h3>
+<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+
+<p><a href="https://github.com/koushikkothagal" class="user-mention">@koushikkothagal</a></p>
+      </section>
+
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>this project by <a href="https://github.com/koushikkothagal">koushikkothagal</a> can be found on <a href="https://github.com/koushikkothagal/hamlet">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="https://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
+      </footer>
+
+    </div>
+
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-52497694-2");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
