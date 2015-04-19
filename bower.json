@@ -8,6 +8,15 @@
   "main": [
     "dist/hamlet.js"
   ],
+  "ignore": [
+    "index.html",
+    "src",
+    "bower_components",
+    "node_modules",
+    "e2e",
+    "gulp",
+    "README.md"
+  ]
   "keywords": [
     "ab-testing",
     "angularjs"
