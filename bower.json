@@ -9,7 +9,10 @@
     "dist/hamlet.js"
   ],
   "ignore": [
-    "index.html"
+    "node_modules",
+    "src",
+    "e2e",
+    "gulp"
   ],
   "keywords": [
     "ab-testing",

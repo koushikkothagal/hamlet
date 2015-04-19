@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('hamlet')
+angular.module('hamletApp')
   .controller('NavbarCtrl', function ($scope) {
     $scope.date = new Date();
   });
