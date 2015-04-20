@@ -81,6 +81,10 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline;
 }
+
+p, li, code {
+	font-size: 115% !important;
+}
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -176,10 +180,9 @@ header span.right-tail {
 
 header h1 {
   background-color: #7c334f;
-  font-size: 2.5em;
+  font-size: 3.5em;
   font-weight: 800;
   font-style: normal;
-  text-transform: uppercase;
   color: #ece4d8;
   text-align: center;
   line-height:1;
@@ -188,7 +191,7 @@ header h1 {
 
 header h2 {
   background-color: #7c334f;
-  font: bold italic .85em/1.5 Georgia, Times, “Times New Roman”, serif;
+  font: bold italic 1.5em/2.5 Georgia, Times, “Times New Roman”, serif;
   color: #e69b95;
   padding-bottom: 14px;
   margin-top: -3px;
@@ -201,10 +204,9 @@ div#no-downloads {
   display: block;
   height: 197px;
   width: 550px;
-  padding-bottom: 150px;
-  margin: -80px auto -150px;
+  margin: -80px auto 0;
   z-index: 1;
-  background: transparent url(../images/bg-ramp.jpg) center 171px no-repeat;
+  background: transparent center 171px no-repeat;
 }
 
 div#no-downloads span.inner {
@@ -269,14 +271,24 @@ span.banner-fix {
 
 section#main_content {
   z-index: 2;
-  padding: 20px 82px 0;
+  padding: 20px 22px 0;
   min-height:185px;
+  max-width: 60em;
+  margin: auto;
+}
+
+#toBe {
+	font-family: 'Niconne', cursive;
+	font-size: 4em;
+  margin-left: 50%;
+  margin-bottom: 250px;
+  margin-top: 70px;
 }
 
 /* footer */
 
 footer {
-  background: transparent url(../images/footer-ramp.jpg) center -1px no-repeat;
+  background: transparent center -1px no-repeat;
   padding-top: 104px;
   margin: -94px auto 40px;
   max-width: 560px;
@@ -314,7 +326,7 @@ footer span.ribbon-inner p {
   margin: 0;
   color: #e69b95;
   font: bold italic 12px/1 Georgia, Times, “Times New Roman”, serif;
-  padding-bottom:4px;
+  padding:14px;
 }
 
 footer span.ribbon-inner a {
