@@ -281,8 +281,14 @@ section#main_content {
 	font-family: 'Niconne', cursive;
 	font-size: 4em;
   margin-left: 50%;
-  margin-bottom: 250px;
-  margin-top: 70px;
+  margin-bottom: 240px;
+  margin-top: 160px;
+}
+
+#hamlet {
+	border: none;
+	padding-left: 20%;
+	box-shadow: none;
 }
 
 /* footer */
