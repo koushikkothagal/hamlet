@@ -291,6 +291,11 @@ section#main_content {
 	box-shadow: none;
 }
 
+#how-it-works-img {
+	display: block;
+	margin: auto;
+}
+
 /* footer */
 
 footer {
