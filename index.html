@@ -1,92 +1,97 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=640">
 
-    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
-    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <link href='http://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Niconne' rel='stylesheet' type='text/css'>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=640">
 
-    <script type="text/javascript" src="javascripts/modernizr.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
+  <link rel="stylesheet" href="stylesheets/core.css" media="screen">
+  <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
+  <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+  <link href='http://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Niconne' rel='stylesheet' type='text/css'>
+
+  <script type="text/javascript" src="javascripts/modernizr.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
         $('#main_content').headsmart()
       })
-    </script>
-    <title>Hamlet by koushikkothagal</title>
-  </head>
+  </script>
+  <title>Hamlet by koushikkothagal</title>
+</head>
 
-  <body>
-    <a id="forkme_banner" href="https://github.com/koushikkothagal/hamlet">View on GitHub</a>
-    <div class="shell">
+<body>
+  <a id="forkme_banner" href="https://github.com/koushikkothagal/hamlet">View on GitHub</a>
+  <div class="shell">
 
-      <header>
-        <span class="ribbon-outer">
+    <header>
+      <span class="ribbon-outer">
           <span class="ribbon-inner">
             <h1>Hamlet</h1>
             <h2>An AngularJS A/B testing framework</h2>
           </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-      </header>
+      <span class="left-tail"></span>
+      <span class="right-tail"></span>
+      </span>
+    </header>
 
-      <section id="downloads">
-        <span class="inner">
+    <section id="downloads">
+      <span class="inner">
           <a href="https://github.com/koushikkothagal/hamlet/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/koushikkothagal/hamlet/tarball/master" class="tgz"><em>download</em> .TGZ</a>
         </span>
-      </section>
+    </section>
 
 
-      <span class="banner-fix"></span>
+    <span class="banner-fix"></span>
 
-       </div>
+  </div>
 
-      <section id="main_content">
-      <div class="hamlet-img" style="float:left">
-      	<img id="hamlet" src="./images/king.png" />
-      </div>
-      <div>
-        <h3 id="toBe" class="caption">"To B, or to A? That's the question."</h3>
-      </div>
+  <section id="main_content">
+    <div class="hamlet-img" style="float:left">
+      <img id="hamlet" src="./images/king.png" />
+    </div>
+    <div>
+      <h3 id="toBe" class="caption">"To B, or to A? That's the question."</h3>
+    </div>
 
-<h3>
+    <h3>
 <a id="about" class="anchor" href="#about" aria-hidden="true"><span class="octicon octicon-link"></span></a>About</h3>
 
-<p>Hamlet is an AngularJS A/B testing framework. Plug in Hamlet to your AngularJS application to test multiple variants of content on any page.</p>
+    <p>Hamlet is an AngularJS A/B testing framework. Plug in Hamlet to your AngularJS application to test multiple variants
+      of content on any page.</p>
 
-<h3>
+    <h3>
 <a id="features" class="anchor" href="#features" aria-hidden="true"><span class="octicon octicon-link"></span></a>Features</h3>
 
-<p>Hamlet supports the following features:</p>
+    <p>Hamlet supports the following features:</p>
 
-<ol>
-<li>Supports testing multiple variations. Hamlet is not just an A/B testing framework. It's an A/B/C/D/... testing framework!</li>
-<li>Show different portions of content to different audiences <em>on the same page</em>. Supports DOM element level variations.</li>
-<li>Control ratio of how much of the audience needs to see each variation. </li>
-<li>Stickiness. Let Hamlet know an ID / session value that identifies a unique user, and Hamlet ensures stickiness. Once a user sees a version, they'll always see the same version, even in multiple browsers.</li>
-<li>Test branch allocations persist across pages and browsers! Use the same ratios, and you can have the user allocated to the same test branch across multiple pages. Even if the user accesses them with different browsers. </li>
-</ol>
+    <ol>
+      <li>Supports testing multiple variations. Hamlet is not just an A/B testing framework. It's an A/B/C/D/... testing framework!</li>
+      <li>Show different portions of content to different audiences <em>on the same page</em>. Supports DOM element level variations.</li>
+      <li>Control ratio of how much of the audience needs to see each variation. </li>
+      <li>Stickiness. Let Hamlet know an ID / session value that identifies a unique user, and Hamlet ensures stickiness. Once
+        a user sees a version, they'll always see the same version, even in multiple browsers.</li>
+      <li>Test branch allocations persist across pages and browsers! Use the same ratios, and you can have the user allocated
+        to the same test branch across multiple pages. Even if the user accesses them with different browsers. </li>
+    </ol>
 
-<h3>
+    <h3>
 <a id="how-to-use" class="anchor" href="#how-to-use" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to use</h3>
 
-<ol>
-<li>Identify a value (some sort of user ID) that uniquely identifies your users.</li>
-<li>Create multiple branches (up to 10 branches) by adding a <code>&lt;div&gt;</code> for each branch, and add code your variants.</li>
-<li>Configure ratios (0 - 1) for each branch to control how many of your users see each branch.</li>
-</ol>
+    <ol>
+      <li>Identify a value (some sort of user ID) that uniquely identifies your users.</li>
+      <li>Create multiple branches (up to 10 branches) by adding a <code>&lt;div&gt;</code> for each branch, and add code your
+        variants.</li>
+      <li>Configure ratios (0 - 1) for each branch to control how many of your users see each branch.</li>
+    </ol>
 
-<p>And Hamlet does the rest</p>
+    <p>And Hamlet does the rest</p>
 
-<div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">ab-test</span> <span class="pl-e">ab-test-qualifier</span>=<span class="pl-s"><span class="pl-pds">"</span>{{userId}}<span class="pl-pds">"</span></span>&gt;
+    <div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">ab-test</span> <span class="pl-e">ab-test-qualifier</span>=<span class="pl-s"><span class="pl-pds">"</span>{{userId}}<span class="pl-pds">"</span></span>&gt;
   &lt;<span class="pl-ent">div</span> <span class="pl-e">test-branch</span> <span class="pl-e">ratio</span>=<span class="pl-s"><span class="pl-pds">"</span>0.1<span class="pl-pds">"</span></span>&gt;
     &lt;<span class="pl-ent">h4</span>&gt;Branch 1&lt;/<span class="pl-ent">h4</span>&gt;
   &lt;/<span class="pl-ent">div</span>&gt;
@@ -99,63 +104,102 @@
 &lt;/<span class="pl-ent">div</span>&gt;</pre></div>
 
 
+
+
 <h3>
+<a id="javascript-usage" class="anchor" href="#javascript-usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Javascript usage</h3>
+
+
+<p>Need Hamlet's hashing logic in your Javascript code? Use this if you need to branch users into calling different business services, or redirecting to different routes in a router. The built in <code>HashService</code> calculates and returns a branch for your target user.</p>
+
+<h4 id="usage">Usage</h4>
+
+<pre><code>HashService.calculateBucket(qualifier, rangeArray)
+</code></pre>
+
+<h4 id="arguments">Arguments</h4>
+
+<p><code>qualifier</code>: Any user identifier, like a user ID.</p>
+
+<p><code>rangeArray</code>: An array of numbers that add up to 10. Split based on the number of tests you want to run.</p>
+
+<h4 id="examples">Examples</h4>
+
+<pre><code>HashService.calculateBucket(&quot;foobar&quot;, [5, 5]);
+</code></pre>
+
+<p>The above code splits the users 50-50 and returns either 0 or 1.</p>
+
+<pre><code>HashService.calculateBucket(&quot;foobar&quot;, [3, 3, 4]);
+</code></pre>
+
+<p>The above code splits the users into 3 buckets. The possible return values are 0, 1 or 2. There is a 30% chance of the return being 0 (first bucket), 30% chance of returning 1 (second bucket) and 40% chance of the third one. </p>
+
+<p>Note: This hashing is &quot;persistent&quot; as well for a given qualifier. For a given qualifier and a given range, the output is <em>always</em> consistent.</p>
+
+
+
+ 
+    <h3>
 <a id="how-it-works" class="anchor" href="#how-it-works" aria-hidden="true"><span class="octicon octicon-link"></span></a>How it works</h3>
 
-<p>Hamlet breaks down the supplied identifier by running through a hashing algorithm. It then chooses one of the available test branches based on the ratio. For example, a branch with ratio 0.4 is twice as likely to be picked as a branch with ratio 0.2.</p>
+    <p>Hamlet breaks down the supplied identifier by running through a hashing algorithm. It then chooses one of the available
+      test branches based on the ratio. For example, a branch with ratio 0.4 is twice as likely to be picked as a branch
+      with ratio 0.2.</p>
 
 
 
-<img id="how-it-works-img" src="./images/how-it-works.png" />
+    <img id="how-it-works-img" src="./images/how-it-works.png" />
 
 
 
 
-<h3>
+    <h3>
 <a id="get-hamlet" class="anchor" href="#get-hamlet" aria-hidden="true"><span class="octicon octicon-link"></span></a>Get Hamlet</h3>
 
-<h4>
+    <h4>
 <a id="bower" class="anchor" href="#bower" aria-hidden="true"><span class="octicon octicon-link"></span></a>Bower</h4>
 
-<pre><code>bower install hamlet
+    <pre><code>bower install hamlet
 </code></pre>
 
-<h4>
+    <h4>
 <a id="js--source" class="anchor" href="#js--source" aria-hidden="true"><span class="octicon octicon-link"></span></a>JS / Source</h4>
 
-<pre><code>https://github.com/koushikkothagal/hamlet
+    <pre><code>https://github.com/koushikkothagal/hamlet
 </code></pre>
 
-<h3>
+    <h3>
 <a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Author</h3>
 
-<p><a href="https://github.com/koushikkothagal" class="user-mention">@koushikkothagal</a></p>
-      </section>
+    <p><a href="https://github.com/koushikkothagal" class="user-mention">@koushikkothagal</a></p>
+  </section>
 
-      <footer>
-        <span class="ribbon-outer">
+  <footer>
+    <span class="ribbon-outer">
           <span class="ribbon-inner">
             <p>this project by <a href="https://github.com/koushikkothagal">koushikkothagal</a> can be found on <a href="https://github.com/koushikkothagal/hamlet">GitHub</a></p>
           </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-        <p>Generated with <a href="https://pages.github.com">GitHub Pages</a> using Merlot</p>
-        <span class="octocat"></span>
-      </footer>
+    <span class="left-tail"></span>
+    <span class="right-tail"></span>
+    </span>
+    <p>Generated with <a href="https://pages.github.com">GitHub Pages</a> using Merlot</p>
+    <span class="octocat"></span>
+  </footer>
 
 
 
-              <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+  <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
             document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
+  </script>
+  <script type="text/javascript">
+    try {
               var pageTracker = _gat._getTracker("UA-52497694-2");
             pageTracker._trackPageview();
             } catch(err) {}
-          </script>
+  </script>
 
-  </body>
+</body>
+
 </html>
