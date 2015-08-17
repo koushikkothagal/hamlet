@@ -83,7 +83,7 @@ time, mark, audio, video {
 }
 
 p, li, code {
-	font-size: 115% !important;
+	font-size: 16px !important;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
